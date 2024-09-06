@@ -37,7 +37,10 @@ Por fim, pedi para ele criar este README, que você está lendo agora.
 
 **Imagens do projeto:**
 
-Aqui você pode adicionar imagens do projeto, como screenshots das páginas, exemplos de uso, entre outros.
+| ![Imagem 1](./source-readme/tela-inicial.jpg) | ![Imagem 2](./source-redme/tela-mutantes.jpg) 
+|:--------------------------------:|:--------------------------------:|:--------------------------------:|
+| Tela 01 | Tela 02
+
 
 **Imagens e Prompts do Gemini:**
 
