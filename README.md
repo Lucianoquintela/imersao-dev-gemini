@@ -46,7 +46,7 @@ Por fim, pedi para ele criar este README, que você está lendo agora.
 Aqui você pode adicionar imagens do projeto, como screenshots das páginas, exemplos de uso, entre outros.
 
 **Imagens e Prompts do Gemini:**
-1. ![Imagem 1](./img-readme/imagem 1.png)
+1. ![Imagem 1](./img-redme/Imagem 1.jpg)
 2. ![Imagem 2](./img-readme/imagem 2.png)
 3. ![Imagem 3](./img-readme/imagem 3.png)
 4. ![Imagem 4](./img-readme/imagem 4.png)
