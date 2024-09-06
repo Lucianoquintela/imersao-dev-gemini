@@ -6,11 +6,10 @@ Este site é uma lista onde você pode encontrar alguns dos mutantes mais podero
 
 1. **Explore os mutantes:** Clique nos botões para ver todos os mutantes ou buscar por um específico.
 2. **Descubra seus poderes:** Leia tudo sobre os poderes de cada mutante e veja como eles são incríveis.
-3. **Divirta-se!**
 
 **Como acessar:**
 
-Você pode acessar o site dos Mutantes através do seguinte link: [Mutantes](https://exemplo.com).
+Você pode acessar o site dos Mutantes através do seguinte link: [Mutantes](https://lucianoquintela.github.io/imersao-dev-gemini/).
 
 **Tecnologias usadas:**
 
