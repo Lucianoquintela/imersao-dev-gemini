@@ -17,10 +17,6 @@ Você pode acessar o site dos Mutantes através do seguinte link: [Mutantes](htt
 * Google Gemini
 * Criado durante a Imersão Dev da Alura
 
-**Autor:**
-
-* Luciano Quintela
-
 **Páginas concluídas:**
 
 Até o momento, duas páginas foram concluídas:
@@ -52,3 +48,7 @@ Aqui você pode adicionar imagens do projeto, como screenshots das páginas, exe
 4. ![Imagem 4](./source-readme/imagem-04.jpg)
 5. ![Imagem 5](./source-readme/imagem-05.jpg)
 6. ![Imagem 6](./source-readme/imagem-06.jpg)
+
+**Autor:**
+
+* Luciano Quintela
