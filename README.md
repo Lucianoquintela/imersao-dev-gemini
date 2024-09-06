@@ -37,8 +37,8 @@ Por fim, pedi para ele criar este README, que você está lendo agora.
 
 **Imagens do projeto:**
 
-| ![Imagem 1](./source-readme/tela-inicial.jpg) | ![Imagem 2](./source-redme/tela-mutantes.jpg) 
-|:--------------------------------:|:--------------------------------:|:--------------------------------:|
+| ![Imagem 1](./source-readme/tela-inicial.jpg) | ![Imagem 2](./source-readme/tela-mutantes.jpg) 
+|:--------------------------------:|:--------------------------------:|
 | Tela 01 | Tela 02
 
 
