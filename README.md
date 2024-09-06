@@ -1,6 +1,6 @@
-# Mutantes Incríveis!
+# Lista de Mutantes
 
-Este site é um lugar mágico onde você pode conhecer os mutantes mais legais do mundo! Descubra seus poderes, veja suas fotos e divirta-se aprendendo sobre eles.
+Este site é uma lista onde você pode encontrar alguns dos mutantes mais poderosos da novela
 
 **Como usar:**
 
