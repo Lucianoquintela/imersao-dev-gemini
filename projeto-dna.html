@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este é um site incrível sobre um tema super legal.">
+    <title>Os Mutantes - O Mundo dos Mutantes</title>
+    <link rel="stylesheet" href="./projeto-dna.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Os Mutantes</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Projeto DNA</a></li>
+                <li><a href="#">Arquivo Omega</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Fórum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="camposDePesquisa">
+            <select id="tipoPesquisa">
+                <option value="numero">Pesquisar por Número</option>
+                <option value="nome">Pesquisar por Nome</option>
+                <option value="poderes">Pesquisar por Poderes</option>
+            </select>
+            <input type="text" id="valorPesquisa" placeholder="Digite o valor para pesquisar">
+            <select id="poderesSelect" style="display: none;">
+                <!-- As opções serão preenchidas via JavaScript -->
+            </select>
+            <button id="buscarMutante">Buscar Mutante</button>
+            <button id="exibirTodos">Exibir Todos os Mutantes</button>
+        </div>
+        <!-- Área onde os mutantes serão exibidos -->
+        <div id="mutantes"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Importa o arquivo de dados dos mutantes -->
+    <script type="module">
+        import { dadosDosMutantes } from './dados.js';
+
+        // Função para exibir os mutantes no HTML
+        function exibirMutantes(mutantes = dadosDosMutantes) {
+            const mutantesDiv = document.getElementById('mutantes');
+            let content = '';
+
+            // Verifica se há resultados
+            if (Object.keys(mutantes).length === 0) {
+                mutantesDiv.innerHTML = '<p>Nenhum mutante encontrado</p>';
+                return;
+            }
+
+            // Percorre o objeto e cria o HTML para cada mutante
+            for (const mutante in mutantes) {
+                const { numero, foto, nome, nomeCompleto, poderes } = mutantes[mutante];
+
+                // Converte o array de poderes em uma string formatada
+                const poderesFormatados = poderes.join(", ");
+
+                content += `
+                    <div>
+                        <h2>Mutante ${numero}: ${nome}</h2>
+                        <img src="${foto}" alt="Foto de ${nome}" width="200">
+                        <p>Nome Completo: ${nomeCompleto}</p>
+                        <p>Poderes: ${poderesFormatados}</p>
+                    </div>
+                `;
+            }
+
+            // Insere o conteúdo no div 'mutantes'
+            mutantesDiv.innerHTML = content;
+        }
+
+        // Função para atualizar o seletor de poderes
+        function atualizarSeletorDePoderes() {
+            const poderesSelect = document.getElementById('poderesSelect');
+            const poderesSet = new Set();
+
+            // Coleta todos os poderes únicos
+            Object.values(dadosDosMutantes).forEach(mutante => {
+                mutante.poderes.forEach(poder => poderesSet.add(poder));
+            });
+
+            // Preenche o menu suspenso com os poderes
+            poderesSelect.innerHTML = '<option value="">Selecione um poder</option>';
+            poderesSet.forEach(poder => {
+                const option = document.createElement('option');
+                option.value = poder.toLowerCase();
+                option.textContent = poder;
+                poderesSelect.appendChild(option);
+            });
+        }
+
+        // Função para pesquisar e exibir mutante com base na seleção
+        function pesquisarMutante() {
+            const tipoPesquisa = document.getElementById('tipoPesquisa').value;
+            const valorPesquisa = document.getElementById('valorPesquisa').value.trim().toLowerCase();
+            const poderSelecionado = document.getElementById('poderesSelect').value;
+
+            let mutantesFiltrados = {};
+
+            if (tipoPesquisa === 'numero') {
+                const numero = parseInt(valorPesquisa, 10);
+                if (!isNaN(numero)) {
+                    mutantesFiltrados = Object.keys(dadosDosMutantes)
+                        .filter(key => dadosDosMutantes[key].numero === numero)
+                        .reduce((obj, key) => {
+                            obj[key] = dadosDosMutantes[key];
+                            return obj;
+                        }, {});
+                }
+            } else if (tipoPesquisa === 'nome') {
+                mutantesFiltrados = Object.keys(dadosDosMutantes)
+                    .filter(key => dadosDosMutantes[key].nome.toLowerCase().includes(valorPesquisa))
+                    .reduce((obj, key) => {
+                        obj[key] = dadosDosMutantes[key];
+                        return obj;
+                    }, {});
+            } else if (tipoPesquisa === 'poderes') {
+                mutantesFiltrados = Object.keys(dadosDosMutantes)
+                    .filter(key => dadosDosMutantes[key].poderes.some(poder => poder.toLowerCase() === poderSelecionado))
+                    .reduce((obj, key) => {
+                        obj[key] = dadosDosMutantes[key];
+                        return obj;
+                    }, {});
+            }
+
+            // Exibe os mutantes filtrados
+            exibirMutantes(mutantesFiltrados);
+        }
+
+        // Função para exibir todos os mutantes
+        function exibirTodosMutantes() {
+            exibirMutantes(dadosDosMutantes);
+        }
+
+        // Atualiza o seletor de poderes e adiciona o listener de eventos
+        document.getElementById('tipoPesquisa').addEventListener('change', function() {
+            const tipoPesquisa = this.value;
+            const poderesSelect = document.getElementById('poderesSelect');
+            const valorPesquisa = document.getElementById('valorPesquisa');
+
+            if (tipoPesquisa === 'poderes') {
+                poderesSelect.style.display = 'inline-block';
+                atualizarSeletorDePoderes();
+                valorPesquisa.style.display = 'none';
+            } else {
+                poderesSelect.style.display = 'none';
+                valorPesquisa.style.display = 'inline-block';
+            }
+        });
+
+        document.getElementById('buscarMutante').addEventListener('click', pesquisarMutante);
+        document.getElementById('exibirTodos').addEventListener('click', exibirTodosMutantes);
+
+        // Chama a função para exibir todos os mutantes ao carregar a página
+        exibirMutantes();
+    </script>
+</body>
+</html>
