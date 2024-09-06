@@ -47,8 +47,8 @@ Aqui você pode adicionar imagens do projeto, como screenshots das páginas, exe
 **Imagens e Prompts do Gemini:**
 
 1. ![Imagem 1](./source-readme/imagem-01.jpg)
-2. ![Imagem 2](./source-readme/imagem-02.png)
-3. ![Imagem 3](./source-readme/imagem-03.png)
-4. ![Imagem 4](./source-readme/imagem-04.png)
-5. ![Imagem 5](./source-readme/imagem-05.png)
-6. ![Imagem 6](./source-readme/imagem-06.png)
+2. ![Imagem 2](./source-readme/imagem-02.jpg)
+3. ![Imagem 3](./source-readme/imagem-03.jpg)
+4. ![Imagem 4](./source-readme/imagem-04.ppg)
+5. ![Imagem 5](./source-readme/imagem-05.ppg)
+6. ![Imagem 6](./source-readme/imagem-06.ppg)
