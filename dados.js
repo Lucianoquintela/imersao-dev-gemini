@@ -199,7 +199,8 @@ export const dadosDosMutantes = {
 			  				  	"Intangibilidade",
 			  				  		"Sensibilidade sobre-humana",
 			  				  	"Manipulação de Feromônios",
-			  				  	"Mimetismo ou absorção de poderes",
+			  				  	"Absorção de poderes",
+			  				  	"Cariocinese",
 			  				  	"Espinhos",
 			  				  		"Magnetocinese",
 			  				  	"Eletrocinese",
@@ -218,5 +219,94 @@ export const dadosDosMutantes = {
 			  				  	"Sentidos Aguçados",
 			  				  	"Super Agilidade"
 			  				  	]
-			  	}
+			  	},
+			  	
+			  	mutante15: {
+			  				  	numero: 15,
+			  				  	foto: "./assets/lucas.jpeg",
+			  				  	nome: "Lucas",
+			  				  	nomeCompleto: "Lucas Fontes Martinelli",
+        poderes: [
+            "Ler pensamentos",
+			  				  	
+			  				  	]
+			  	},
+			  	
+			  	mutante16: {
+			  				  	numero: 16,
+			  				  	foto: "./assets/cleo.jpeg",
+			  				  	nome: "Cléo",
+			  				  	nomeCompleto: "Cléo Mayer",
+        poderes: [
+            "Sobrevivência",
+			  				  	     "Projeção Astral",
+			  				  	"Petrificação"
+			  				  	]
+			  	},mutante17: {
+			  				  	numero: 17,
+			  				  	foto: "./assets/dr-cesar.jpeg",
+			  				  	nome: "Dr. césar",
+			  				  	nomeCompleto: "César Rubicão",
+        poderes: [
+            "Genes de Lobo",
+			  				  	"Presas Afiadas",
+			  				  	"Sentidos Aguçados",
+			  				  	"Força Sobre-Humana",
+			  				  	"Transmissão de Licantropia"
+			  				  	]
+			  	},
+			  	
+			  	mutante18: {
+			  				  	numero: 18,
+			  				  	foto: "./assets/ramon.jpeg",
+			  				  	nome: "Ramon",
+			  				  	
+			  				  	nomeCompleto: "Ramon Fusily",
+        poderes: [
+            "Genes de Lobo",
+			  				  	"Presas Afiadas",
+			  				  	"Sentidos Aguçados",
+			  				  	"Força Sobre-Humana",
+			  				  	"Transmissão de Licantropia"
+			  				  	]
+			  	},
+			  	
+			  	mutante19: {
+			  				  	numero: 19,
+			  				  	foto: "./assets/eric.jpeg",
+			  				  	nome: "Eric",
+			  				  	nomeCompleto: "Eric Fusily",
+        poderes: [
+            "Genes de Lobo",
+			  				  	"Presas Afiadas",
+			  				  	"Sentidos Aguçados",
+			  				  	"Força Sobre-Humana",
+			  				  	"Transmissão de Licantropia"
+			  				  	]
+			  	},
+			  	
+			  	mutante20: {
+			  				  	numero: 20,
+			  				  	foto: "./assets/felina.jpg",
+			  				  	nome: "Felina",
+			  				  	nomeCompleto: "Mulher-Pantera",
+        poderes: [
+            "Presas e Garras Afiadas",
+			  				  	     "Canibalismo",
+			  				  	"Sentidos Aguçados",
+			  				  	"Agilidade de Pantera",
+			  				  	"Super Velocidade de Pantera",
+			  				  	"Transmissão de Felinismo"
+			  				  	]
+			  	},
+			  	
+			  	mutante21: {
+			  				  	numero: 21,
+			  				  	foto: "./assets/gor.jpeg",
+			  				  	nome: "Gór",
+			  				  	nomeCompleto: "Górgorna Mayer",
+        poderes: [
+            "Hipnose",
+			  				  	]
+			  	},
 };
