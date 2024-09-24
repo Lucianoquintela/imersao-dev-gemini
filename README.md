@@ -41,16 +41,6 @@ Por fim, pedi para ele criar este README, que você está lendo agora.
 |:--------------------------------:|:--------------------------------:|
 | Tela 01 | Tela 02
 
-
-**Imagens e Prompts do Gemini:**
-
-1. ![Imagem 1](./source-readme/imagem-01.jpg)
-2. ![Imagem 2](./source-readme/imagem-02.jpg)
-3. ![Imagem 3](./source-readme/imagem-03.jpg)
-4. ![Imagem 4](./source-readme/imagem-04.jpg)
-5. ![Imagem 5](./source-readme/imagem-05.jpg)
-6. ![Imagem 6](./source-readme/imagem-06.jpg)
-
 **Autor:**
 
 * Luciano Quintela

@@ -17,7 +17,7 @@ export const dadosDosMutantes = {
     },
     mutante02: {
     				   numero:2,
-        foto: "./assets/chris.jpg",
+        foto: "./assets/chris.JPG",
         nome: "Chris",
         nomeCompleto: "Cristiano Pena",
         poderes: [
